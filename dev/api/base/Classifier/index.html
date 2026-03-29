@@ -21,8 +21,11 @@
         <link rel="next" href="../Clusterer/">
       
       
+        
+      
+      
       <link rel="icon" href="../../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+      <meta name="generator" content="zensical-0.0.30">
     
     
       
@@ -30,10 +33,15 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.3b031116.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
 
@@ -47,21 +55,20 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Fira Code"}</style>
       
     
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       <script
   defer
   src="https://eu.umami.is/script.js"
   data-website-id="b9f84709-bbc5-48b5-b43b-ef0bcc45a1f8"
 ></script>
-    
     
     
   </head>
@@ -79,7 +86,7 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
     <div data-md-component="skip">
       
         
@@ -103,12 +110,12 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="River" class="md-header__button md-logo" aria-label="River" data-md-component="logo">
       
-  <img src="../../../img/icon.png" alt="logo">
+  <img src="../../../img/icon.png" alt="River">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -133,7 +140,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -143,7 +150,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -158,56 +165,32 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
       
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
 </div>
+      
     
-    
-      <div class="md-header__source">
+    <div class="md-header__source">
+      
         <a href="https://github.com/online-ml/river" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     online-ml/river
   </div>
 </a>
-      </div>
-    
+      
+    </div>
   </nav>
   
 </header>
@@ -226,43 +209,20 @@
   
   
   
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../introduction/installation/" class="md-tabs__link">
-          
   
-    
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
   
-  Introduction 🍼
+  river
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
         
   
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../recipes/reading-data/" class="md-tabs__link">
-          
-  
-    
-  
-  Recipes 🌮
-
-        </a>
-      </li>
-    
-  
-
-      
-        
   
   
     
@@ -274,9 +234,7 @@
         <a href="../../overview/" class="md-tabs__link">
           
   
-    
-  
-  API reference 🍱
+  Api
 
         </a>
       </li>
@@ -285,6 +243,26 @@
 
       
         
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../benchmarks/" class="md-tabs__link">
+          
+  
+  Benchmarks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
   
   
   
@@ -294,9 +272,7 @@
         <a href="../../../examples/batch-to-online/" class="md-tabs__link">
           
   
-    
-  
-  Examples 🌶️
+  Examples
 
         </a>
       </li>
@@ -305,6 +281,7 @@
 
       
         
+  
   
   
   
@@ -314,9 +291,7 @@
         <a href="../../../faq/" class="md-tabs__link">
           
   
-    
-  
-  FAQ
+  Faq
 
         </a>
       </li>
@@ -325,18 +300,17 @@
 
       
         
+  
   
   
   
     
     
       <li class="md-tabs__item">
-        <a href="../../../releases/unreleased/" class="md-tabs__link">
+        <a href="../../../introduction/basic-concepts/" class="md-tabs__link">
           
   
-    
-  
-  Releases
+  Introduction
 
         </a>
       </li>
@@ -346,34 +320,6 @@
       
         
   
-  
-  
-    
-    
-      
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../benchmarks/Binary%20classification/" class="md-tabs__link">
-          
-  
-    
-  
-  Benchmarks
-
-        </a>
-      </li>
-    
-  
-
-    
-  
-
-      
-        
   
   
   
@@ -383,9 +329,45 @@
         <a href="../../../license/license/" class="md-tabs__link">
           
   
+  License
+
+        </a>
+      </li>
     
   
-  License 📝
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../recipes/active-learning/" class="md-tabs__link">
+          
+  
+  Recipes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../releases/0.0.2/" class="md-tabs__link">
+          
+  
+  Releases
 
         </a>
       </li>
@@ -417,7 +399,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="River" class="md-nav__button md-logo" aria-label="River" data-md-component="logo">
       
-  <img src="../../../img/icon.png" alt="logo">
+  <img src="../../../img/icon.png" alt="River">
 
     </a>
     River
@@ -427,7 +409,7 @@
       <a href="https://github.com/online-ml/river" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     online-ml/river
@@ -443,118 +425,23 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
-  
-    <a href="../../../introduction/installation/" class="md-nav__link">
-      
   
   <span class="md-ellipsis">
-    Introduction 🍼
+    
+  
+    river
+  
+
+    
   </span>
   
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
   
 
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../../recipes/reading-data/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
-    Recipes 🌮
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
+      </a>
     </li>
   
 
@@ -650,6 +537,7 @@
       
         
       
+    
     
     
       
@@ -665,24 +553,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
-    API reference 🍱
+    
+  
+    Api
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            API reference 🍱
+            
+  
+    Api
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -696,9 +595,16 @@
       <a href="../../overview/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -722,6 +628,7 @@
       
     
     
+    
       
       
     
@@ -734,14 +641,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../active/EntropySampler/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    active
+    
+  
+    Active
+  
+
+    
   </span>
+  
   
 
       
@@ -785,6 +700,7 @@
       
     
     
+    
       
       
     
@@ -797,14 +713,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    anomaly
+    
+  
+    Anomaly
+  
+
+    
   </span>
+  
   
 
       
@@ -852,6 +776,7 @@
       
         
       
+    
     
     
       
@@ -868,12 +793,20 @@
         
   
   
+  
     <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    bandit
+    
+  
+    Bandit
+  
+
+    
   </span>
+  
   
 
       
@@ -941,6 +874,7 @@
       
         
       
+    
     
     
       
@@ -953,24 +887,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
-    base
+    
+  
+    Base
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
-            base
+            
+  
+    Base
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -984,9 +929,16 @@
       <a href="../Base/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Base
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1005,9 +957,16 @@
       <a href="../BaseTransformer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     BaseTransformer
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1026,9 +985,16 @@
       <a href="../BinaryDriftAndWarningDetector/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     BinaryDriftAndWarningDetector
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1047,9 +1013,16 @@
       <a href="../BinaryDriftDetector/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     BinaryDriftDetector
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1068,60 +1041,22 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
+  
   
   <span class="md-ellipsis">
+    
+  
     Classifier
-  </span>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Classifier
+    
   </span>
+  
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Methods
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1138,9 +1073,16 @@
       <a href="../Clusterer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Clusterer
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1159,9 +1101,16 @@
       <a href="../DriftAndWarningDetector/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     DriftAndWarningDetector
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1180,9 +1129,16 @@
       <a href="../DriftDetector/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     DriftDetector
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1201,9 +1157,16 @@
       <a href="../Ensemble/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Ensemble
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1222,9 +1185,16 @@
       <a href="../Estimator/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Estimator
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1243,9 +1213,16 @@
       <a href="../MiniBatchClassifier/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     MiniBatchClassifier
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1264,9 +1241,16 @@
       <a href="../MiniBatchRegressor/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     MiniBatchRegressor
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1285,9 +1269,16 @@
       <a href="../MiniBatchSupervisedTransformer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     MiniBatchSupervisedTransformer
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1306,9 +1297,16 @@
       <a href="../MiniBatchTransformer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     MiniBatchTransformer
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1327,9 +1325,16 @@
       <a href="../MultiLabelClassifier/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     MultiLabelClassifier
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1348,9 +1353,16 @@
       <a href="../MultiTargetRegressor/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     MultiTargetRegressor
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1369,9 +1381,16 @@
       <a href="../Regressor/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Regressor
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1390,9 +1409,16 @@
       <a href="../SupervisedTransformer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     SupervisedTransformer
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1411,9 +1437,16 @@
       <a href="../Transformer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Transformer
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1432,9 +1465,16 @@
       <a href="../Wrapper/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Wrapper
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1453,9 +1493,16 @@
       <a href="../WrapperEnsemble/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     WrapperEnsemble
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1497,6 +1544,7 @@
       
     
     
+    
       
       
     
@@ -1509,14 +1557,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    cluster
+    
+  
+    Cluster
+  
+
+    
   </span>
+  
   
 
       
@@ -1558,6 +1614,7 @@
       
     
     
+    
       
       
     
@@ -1570,14 +1627,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    compat
+    
+  
+    Compat
+  
+
+    
   </span>
+  
   
 
       
@@ -1629,6 +1694,7 @@
       
     
     
+    
       
       
     
@@ -1641,14 +1707,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../compose/Discard/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    compose
+    
+  
+    Compose
+  
+
+    
   </span>
+  
   
 
       
@@ -1678,6 +1752,7 @@
       
     
     
+    
       
       
     
@@ -1690,14 +1765,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../conf/Interval/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    conf
+    
+  
+    Conf
+  
+
+    
   </span>
+  
   
 
       
@@ -1727,6 +1810,7 @@
       
     
     
+    
       
       
     
@@ -1739,14 +1823,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    covariance
+    
+  
+    Covariance
+  
+
+    
   </span>
+  
   
 
       
@@ -1826,6 +1918,7 @@
       
     
     
+    
       
       
     
@@ -1838,14 +1931,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    datasets
+    
+  
+    Datasets
+  
+
+    
   </span>
+  
   
 
       
@@ -1887,6 +1988,7 @@
       
     
     
+    
       
       
     
@@ -1899,14 +2001,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    drift
+    
+  
+    Drift
+  
+
+    
   </span>
+  
   
 
       
@@ -1938,6 +2048,7 @@
       
     
     
+    
       
       
     
@@ -1950,14 +2061,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    dummy
+    
+  
+    Dummy
+  
+
+    
   </span>
+  
   
 
       
@@ -2007,6 +2126,7 @@
       
     
     
+    
       
       
     
@@ -2019,14 +2139,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    ensemble
+    
+  
+    Ensemble
+  
+
+    
   </span>
+  
   
 
       
@@ -2064,6 +2192,7 @@
       
     
     
+    
       
       
     
@@ -2076,14 +2205,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    evaluate
+    
+  
+    Evaluate
+  
+
+    
   </span>
+  
   
 
       
@@ -2125,6 +2262,7 @@
       
     
     
+    
       
       
     
@@ -2137,14 +2275,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    facto
+    
+  
+    Facto
+  
+
+    
   </span>
+  
   
 
       
@@ -2182,6 +2328,7 @@
       
     
     
+    
       
       
     
@@ -2194,14 +2341,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    feature_extraction
+    
+  
+    Feature extraction
+  
+
+    
   </span>
+  
   
 
       
@@ -2233,6 +2388,7 @@
       
     
     
+    
       
       
     
@@ -2245,14 +2401,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    feature_selection
+    
+  
+    Feature selection
+  
+
+    
   </span>
+  
   
 
       
@@ -2288,6 +2452,7 @@
       
     
     
+    
       
       
     
@@ -2300,14 +2465,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    forest
+    
+  
+    Forest
+  
+
+    
   </span>
+  
   
 
       
@@ -2347,6 +2520,7 @@
       
     
     
+    
       
       
     
@@ -2359,14 +2533,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    imblearn
+    
+  
+    Imblearn
+  
+
+    
   </span>
+  
   
 
       
@@ -2410,6 +2592,7 @@
       
     
     
+    
       
       
     
@@ -2422,14 +2605,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    linear_model
+    
+  
+    Linear model
+  
+
+    
   </span>
+  
   
 
       
@@ -2557,6 +2748,7 @@
       
     
     
+    
       
       
     
@@ -2569,14 +2761,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    metrics
+    
+  
+    Metrics
+  
+
+    
   </span>
+  
   
 
       
@@ -2606,6 +2806,7 @@
       
     
     
+    
       
       
     
@@ -2618,14 +2819,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../misc/SDFT/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    misc
+    
+  
+    Misc
+  
+
+    
   </span>
+  
   
 
       
@@ -2663,6 +2872,7 @@
       
     
     
+    
       
       
     
@@ -2675,14 +2885,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    model_selection
+    
+  
+    Model selection
+  
+
+    
   </span>
+  
   
 
       
@@ -2714,6 +2932,7 @@
       
     
     
+    
       
       
     
@@ -2726,14 +2945,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    multiclass
+    
+  
+    Multiclass
+  
+
+    
   </span>
+  
   
 
       
@@ -2769,6 +2996,7 @@
       
     
     
+    
       
       
     
@@ -2781,14 +3009,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    multioutput
+    
+  
+    Multioutput
+  
+
+    
   </span>
+  
   
 
       
@@ -2822,6 +3058,7 @@
       
     
     
+    
       
       
     
@@ -2834,14 +3071,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    naive_bayes
+    
+  
+    Naive bayes
+  
+
+    
   </span>
+  
   
 
       
@@ -2875,6 +3120,7 @@
       
     
     
+    
       
       
     
@@ -2887,14 +3133,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    neighbors
+    
+  
+    Neighbors
+  
+
+    
   </span>
+  
   
 
       
@@ -2924,6 +3178,7 @@
       
     
     
+    
       
       
     
@@ -2936,14 +3191,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    neural_net
+    
+  
+    Neural net
+  
+
+    
   </span>
+  
   
 
       
@@ -3003,6 +3266,7 @@
       
     
     
+    
       
       
     
@@ -3015,14 +3279,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    optim
+    
+  
+    Optim
+  
+
+    
   </span>
+  
   
 
       
@@ -3084,6 +3356,7 @@
       
     
     
+    
       
       
     
@@ -3096,14 +3369,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    preprocessing
+    
+  
+    Preprocessing
+  
+
+    
   </span>
+  
   
 
       
@@ -3139,6 +3420,7 @@
       
     
     
+    
       
       
     
@@ -3151,14 +3433,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../proba/Beta/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    proba
+    
+  
+    Proba
+  
+
+    
   </span>
+  
   
 
       
@@ -3194,6 +3484,7 @@
       
     
     
+    
       
       
     
@@ -3206,14 +3497,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../reco/Baseline/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    reco
+    
+  
+    Reco
+  
+
+    
   </span>
+  
   
 
       
@@ -3241,6 +3540,7 @@
       
     
     
+    
       
       
     
@@ -3253,14 +3553,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../rules/AMRules/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    rules
+    
+  
+    Rules
+  
+
+    
   </span>
+  
   
 
       
@@ -3294,6 +3602,7 @@
       
     
     
+    
       
       
     
@@ -3306,14 +3615,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../sketch/Counter/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    sketch
+    
+  
+    Sketch
+  
+
+    
   </span>
+  
   
 
       
@@ -3407,6 +3724,7 @@
       
     
     
+    
       
       
     
@@ -3419,14 +3737,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    stats
+    
+  
+    Stats
+  
+
+    
   </span>
+  
   
 
       
@@ -3478,6 +3804,7 @@
       
     
     
+    
       
       
     
@@ -3490,14 +3817,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../stream/Cache/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    stream
+    
+  
+    Stream
+  
+
+    
   </span>
+  
   
 
       
@@ -3539,6 +3874,7 @@
       
     
     
+    
       
       
     
@@ -3551,14 +3887,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    time_series
+    
+  
+    Time series
+  
+
+    
   </span>
+  
   
 
       
@@ -3606,6 +3950,7 @@
       
     
     
+    
       
       
     
@@ -3618,14 +3963,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    tree
+    
+  
+    Tree
+  
+
+    
   </span>
+  
   
 
       
@@ -3671,6 +4024,7 @@
       
     
     
+    
       
       
     
@@ -3685,12 +4039,20 @@
         
   
   
+  
     <a href="../../utils/Rolling/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    utils
+    
+  
+    Utils
+  
+
+    
   </span>
+  
   
 
       
@@ -3722,25 +4084,10 @@
     
       
         
-      
+          
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
+    
     
     
       
@@ -3757,12 +4104,93 @@
         
   
   
+  
+    <a href="../../../benchmarks/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarks
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
     <a href="../../../examples/batch-to-online/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    Examples 🌶️
+    
+  
+    Examples
+  
+
+    
   </span>
+  
   
 
       
@@ -3791,6 +4219,7 @@
       
     
     
+    
       
       
     
@@ -3803,14 +4232,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../../faq/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    FAQ
+    
+  
+    Frequently Asked Questions
+  
+
+    
   </span>
+  
   
 
       
@@ -3845,68 +4282,7 @@
       
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
+    
     
     
       
@@ -3923,12 +4299,20 @@
         
   
   
-    <a href="../../../releases/unreleased/" class="md-nav__link">
+  
+    <a href="../../../introduction/basic-concepts/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    Releases
+    
+  
+    Introduction
+  
+
+    
   </span>
+  
   
 
       
@@ -3953,10 +4337,7 @@
       
         
       
-        
-      
-        
-      
+    
     
     
       
@@ -3972,64 +4353,223 @@
       
         
   
-  
-    
-  
-  
-    <a href="../../../benchmarks/Binary%20classification/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
-    Benchmarks
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
   
   
     <a href="../../../license/license/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
-    License 📝
+    
+  
+    License
+  
+
+    
   </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../recipes/active-learning/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recipes
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../releases/0.0.2/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Releases
+  
+
+    
+  </span>
+  
   
 
       
@@ -4053,10 +4593,17 @@
               
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
+                  
+                    <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                    <div class="md-sidebar-button__wrapper">
+                      <label class="md-sidebar-button" for="__toc"></label>
+                    </div>
+                  
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
   
@@ -4065,14 +4612,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     <span class="md-ellipsis">
-      Methods
+      
+        Methods
+      
     </span>
   </a>
   
@@ -4088,9 +4637,12 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
+  
+  
 
 
 <h1 id="classifier">Classifier<a class="headerlink" href="#classifier" title="Permanent link">&para;</a></h1>
@@ -4130,6 +4682,8 @@
 <p><em>dict[base.typing.ClfTarget, float]</em>:     A dictionary that associates a probability which each label.</p>
 </details>
 <p><span /></p>
+
+
 
 
 
@@ -4180,7 +4734,8 @@
       </div>
 
       <!-- Social links -->
-      <div class="md-social">
+      
+<div class="md-social">
   
     
     
@@ -4190,7 +4745,7 @@
       
     
     <a href="https://github.com/online-ml/river" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M202.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M496 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
     </a>
   
 </div>
@@ -4204,22 +4759,17 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.tabs", "navigation.instant", "navigation.indexes", "navigation.prune"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
-    
-      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="../../../js/mkdocs-charts-plugin.js"></script>
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["content.code.copy","navigation.tabs","navigation.instant","navigation.indexes","navigation.prune"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.66be65ca.min.js"></script>
       
         <script src="../../../javascripts/config.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2/es5/tex-mml-chtml.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
       
         <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
       
