@@ -71,6 +71,20 @@
 ></script>
     
     
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="River" />
+  <meta property="og:title" content="Unreleased - River" />
+  <meta property="og:description" content="Online machine learning in Python" />
+  <meta property="og:url" content="https://riverml.xyz/dev/releases/unreleased/" />
+  <meta property="og:image" content="https://riverml.xyz/img/icon.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Unreleased - River" />
+  <meta name="twitter:description" content="Online machine learning in Python" />
+  <meta name="twitter:image" content="https://riverml.xyz/img/icon.png" />
+
   </head>
   
   
@@ -270,7 +284,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../examples/" class="md-tabs__link">
+        <a href="../../examples/index.md" class="md-tabs__link">
           
   
   Examples
@@ -488,8 +502,6 @@
       
         
       
-        
-      
     
     
     
@@ -542,6 +554,234 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -1004,6 +1244,8 @@
       
         
       
+        
+      
     
     
     
@@ -1022,14 +1264,14 @@
   
   
   
-    <a href="../../examples/" class="md-nav__link">
+    <a href="../../examples/index.md" class="md-nav__link">
       
   
   
   <span class="md-ellipsis">
     
   
-    Examples
+    none
   
 
     
@@ -1458,6 +1700,17 @@
     <span class="md-ellipsis">
       
         utils
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        compose
       
     </span>
   </a>
@@ -2813,6 +3066,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        compose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#linear_model" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2947,6 +3211,7 @@
 <h2 id="evaluate">evaluate<a class="headerlink" href="#evaluate" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Optimized <code>progressive_val_score</code> and <code>iter_progressive_val_score</code> with a fast path for the common no-delay case. The evaluation loop now iterates the dataset directly, skipping the <code>simulate_qa</code> generator and internal prediction buffer. Combined with caching <code>model._supervised</code> and <code>metric.update</code>, this yields a <strong>1.5x speedup</strong> on typical workloads.</li>
+<li>Added per-sample weight support in <code>progressive_val_score</code> and <code>iter_progressive_val_score</code>. Weights can be passed via dataset tuples as <code>(x, y, {"w": 2.0})</code> and are forwarded to <code>learn_one</code> for models that accept a <code>w</code> parameter.</li>
 </ul>
 <h2 id="stream">stream<a class="headerlink" href="#stream" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2970,10 +3235,16 @@
 <ul>
 <li>Added <code>cond_log_proba</code> to <code>GaussianSplitter</code> and optimized <code>do_naive_bayes_prediction</code> to use direct log-probabilities, avoiding the <code>exp</code>/<code>log</code> round-trip.</li>
 <li>Added handling for division by zero in <code>tree.hoeffding_tree</code> for leaf size estimation.</li>
+<li>Optimized Mondrian trees and AMF (Aggregated Mondrian Forest): replaced dict-based node storage with list-indexed storage, added feature/class-to-index mappings, inlined all hot-path methods, and moved the core traversal loops (<code>_go_downwards</code>, <code>update_downwards</code>, <code>predict_proba</code> upward walk) to Cython. AMFClassifier is <strong>3.2x faster</strong>, AMFRegressor is <strong>2.9x faster</strong>.</li>
+<li>Fixed a shared-state bug in <code>MondrianTreeRegressor</code> where <code>replant()</code> copied the <code>Mean</code> object by reference, causing branch and child nodes to share the same running mean. Each node now maintains independent mean statistics, matching the onelearn reference implementation.</li>
 </ul>
 <h2 id="utils">utils<a class="headerlink" href="#utils" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Optimized <code>VectorDict</code> binary operations (add, sub, mul, div, minimum, maximum) with fast paths that bypass generator-based key iteration when no mask or factory is set. Added fused <code>isub_scaled</code>/<code>iadd_scaled</code> methods to avoid intermediate allocations. This speeds up online linear models by 8–34% depending on the optimizer and feature count.</li>
+</ul>
+<h2 id="compose">compose<a class="headerlink" href="#compose" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Fixed <code>Pipeline.learn_one</code> to forward extra <code>**params</code> (e.g. sample weight <code>w</code>) to the final supervised step.</li>
 </ul>
 <h2 id="linear_model">linear_model<a class="headerlink" href="#linear_model" title="Permanent link">&para;</a></h2>
 <ul>
@@ -3013,8 +3284,6 @@
 
 
 
-
-  
 
 
 
