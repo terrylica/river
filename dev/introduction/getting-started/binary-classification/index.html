@@ -321,7 +321,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../releases/unreleased/" class="md-tabs__link">
+        <a href="../../../releases/unreleased.md" class="md-tabs__link">
           
   
   Releases
@@ -1762,6 +1762,8 @@
       
         
       
+        
+      
     
     
     
@@ -1780,7 +1782,7 @@
   
   
   
-    <a href="../../../releases/unreleased/" class="md-nav__link">
+    <a href="../../../releases/unreleased.md" class="md-nav__link">
       
   
   
@@ -1910,12 +1912,16 @@
 
 This dataset contains features from web pages that are classified as phishing or not.
 
-    Name  Phishing                                                          
-    Task  Binary classification                                             
- Samples  1,250                                                             
-Features  9                                                                 
-  Sparse  False                                                             
-    Path  /Users/max/projects/online-ml/river/river/datasets/phishing.csv.gz
+References
+----------
+[^1]: [UCI page](http://archive.ics.uci.edu/ml/datasets/Website+Phishing)
+
+    Name  Phishing                                                
+    Task  Binary classification                                   
+ Samples  1,250                                                   
+Features  9                                                       
+  Sparse  False                                                   
+    Path  /Users/max/projects/river/river/datasets/phishing.csv.gz
 </code></pre></div>
 <p>This dataset is a streaming dataset which can be looped over.</p>
 <div class="language-python highlight"><pre><span></span><code><span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">:</span>
