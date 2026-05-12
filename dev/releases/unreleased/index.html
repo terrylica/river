@@ -2159,10 +2159,54 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#drift" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        drift
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#metrics" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
         metrics
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        utils
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anomaly" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        anomaly
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        cluster
       </span>
     </span>
   </a>
@@ -3363,10 +3407,54 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#drift" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        drift
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#metrics" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
         metrics
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        utils
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anomaly" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        anomaly
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        cluster
       </span>
     </span>
   </a>
@@ -3417,10 +3505,31 @@
 <ul>
 <li>Deprecated <code>river.neural_net</code>; importing it now emits a <code>DeprecationWarning</code> and users are encouraged to use <code>deep-river</code> for neural networks. Addresses <a href="https://github.com/online-ml/river/issues/1828">#1828</a>.</li>
 </ul>
+<h2 id="drift">drift<a class="headerlink" href="#drift" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Reimplemented <a href="../../api/drift/ADWIN"><code>drift.ADWIN</code></a>'s inner <code>AdaptiveWindowing</code> in Rust. The Cython sources are removed; output is bit-identical to the Cython baseline (width, total, variance, n_detections, drift_detected) over a 3.8k-step parity fuzz. Rust is 1.3-3.5x faster than the previous Cython implementation across <code>clock</code> settings.</li>
+</ul>
 <h2 id="metrics">metrics<a class="headerlink" href="#metrics" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Reimplemented the inner <code>expected_mutual_info</code> routine (used by <a href="../../api/metrics/AdjustedMutualInfo"><code>metrics.AdjustedMutualInfo</code></a>) in Rust. The Cython sources are removed and the new implementation is roughly twice as fast as the old one across all tested contingency-table sizes.</li>
+<li>
+<p>Sped up <a href="../../api/metrics/Silhouette"><code>metrics.Silhouette</code></a> by switching the centroid distance computations from the <a href="../../api/utils/math/minkowski-distance"><code>utils.math.minkowski_distance</code></a> Python wrapper to a direct call into the Rust <code>euclidean_distance_dict</code>.</p>
+</li>
+<li>
+<p>Reimplemented the inner <code>expected_mutual_info</code> routine (used by <a href="../../api/metrics/AdjustedMutualInfo"><code>metrics.AdjustedMutualInfo</code></a>) in Rust. The Cython sources are removed and the new implementation is roughly twice as fast as the old one across all tested contingency-table sizes.</p>
+</li>
 <li>Reimplemented <a href="../../api/metrics/RollingROCAUC"><code>metrics.RollingROCAUC</code></a> and <a href="../../api/metrics/RollingPRAUC"><code>metrics.RollingPRAUC</code></a> in Rust. The C++ implementation is removed. Output is bit-identical to the C++ version on all tested inputs and a latent bug in <code>revert()</code> with a non-default <code>pos_val</code> is also fixed.</li>
+</ul>
+<h2 id="utils">utils<a class="headerlink" href="#utils" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Reimplemented <a href="../../api/utils/VectorDict"><code>utils.VectorDict</code></a> (and the helper functions <code>euclidean_distance_dict</code>, <code>euclidean_distance_tuple</code>, <code>lazy_search_euclidean</code>) in Rust. The Cython sources are removed; the public API is unchanged. Element-wise operations are faster across the board: <code>vec + scalar</code> and <code>vec * scalar</code> are ~18% faster on 20-key dicts and ~14% faster on 1000-key dicts; <code>vec + vec</code> is 4-5% faster, <code>vec @ vec</code> (dot product) is 4-10% faster. The constructor and <code>__setitem__</code> are within 1-4% of the Cython baseline (~2 ns absolute, dominated by PyO3 object-allocation overhead).</li>
+</ul>
+<h2 id="anomaly">anomaly<a class="headerlink" href="#anomaly" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Sped up <a href="../../api/api/anomaly/LocalOutlierFactor"><code>api.anomaly.LocalOutlierFactor</code></a> by replacing the default <code>functools.partial([utils.math.minkowski_distance](../api/utils/math/minkowski-distance), p=2)</code> distance function with a direct call into the Rust <code>euclidean_distance_dict</code>, removing the Python-level dispatch.</li>
+</ul>
+<h2 id="cluster">cluster<a class="headerlink" href="#cluster" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Sped up <code>cluster.STREAMKMeans.predict_one</code> by switching the per-center distance from the <a href="../../api/utils/math/minkowski-distance"><code>utils.math.minkowski_distance</code></a> Python wrapper to a direct call into the Rust <code>euclidean_distance_dict</code>.</li>
 </ul>
 <h2 id="tree">tree<a class="headerlink" href="#tree" title="Permanent link">&para;</a></h2>
 <ul>
@@ -3428,6 +3537,7 @@
 <li>Fixed Mondrian tree leaf nodes losing their bounding box ranges during splits. Previously, when a leaf was split, the new child nodes did not inherit the <code>memory_range_min</code> and <code>memory_range_max</code> attributes, which caused incorrect range extension calculations. Fixes <a href="https://github.com/online-ml/river/issues/1801">#1801</a></li>
 <li>Fixed <code>MondrianNodeClassifier.replant</code> copying min and max bounds by reference instead of by value during a split. The fix ensures these arrays are explicitly copied by value so the bounds are correctly preserved. Fixed <a href="https://github.com/online-ml/river/issues/1834">#1834</a></li>
 <li>Skipped the expensive <code>range_extension_c</code> call for pure nodes in the Mondrian classifier's downward pass when <code>split_pure=False</code> (default). Benchmarks show ~3–5% speedup on datasets with 50+ features.</li>
+<li>Reimplemented the Mondrian tree numerical helpers (<code>tree.mondrian._mondrian_ops</code>) in Rust. The Cython sources are removed; the helpers are now exposed via <code>river.stats._rust_stats</code>. Output matches the Cython baseline (Bananas accuracy unchanged at 70.64%). The leaf-to-root <code>_go_upwards</code> walk and the predict tree-walk also moved into Rust as single FFI calls, eliminating ~360k Python frame setups per 20k-sample run. End-to-end <code>MondrianTreeClassifier</code> learn+predict is ~28% faster (~23 µs/iter vs ~32 µs/iter Cython); <code>MondrianTreeRegressor</code> is ~21% faster (~31 µs/iter vs ~39 µs/iter) on a 20k-sample 10-feature synthetic stream.</li>
 </ul>
 
 
