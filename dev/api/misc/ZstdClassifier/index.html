@@ -12,36 +12,36 @@
         <meta name="author" content="The Fellowship of Online Machine Learning">
       
       
-        <link rel="canonical" href="https://riverml.xyz/dev/api/drift/binary/HDDM-A/">
+        <link rel="canonical" href="https://riverml.xyz/dev/api/misc/ZstdClassifier/">
       
       
-        <link rel="prev" href="../FHDDM/">
+        <link rel="prev" href="../Skyline/">
       
       
-        <link rel="next" href="../HDDM-W/">
+        <link rel="next" href="../../model-selection/BanditClassifier/">
       
       
         
       
       
-      <link rel="icon" href="../../../../img/favicon.ico">
+      <link rel="icon" href="../../../img/favicon.ico">
       <meta name="generator" content="zensical-0.0.40">
     
     
       
-        <title>HDDM_A - River</title>
+        <title>ZstdClassifier - River</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../../../assets/stylesheets/classic/main.a2001754.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/classic/main.a2001754.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/classic/palette.7dc9a0ad.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/classic/palette.7dc9a0ad.min.css">
       
       
 
@@ -60,9 +60,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       <script
   defer
@@ -79,14 +79,14 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="River" />
-  <meta property="og:title" content="HDDM_A - River" />
+  <meta property="og:title" content="ZstdClassifier - River" />
   <meta property="og:description" content="Online machine learning in Python" />
-  <meta property="og:url" content="https://riverml.xyz/dev/api/drift/binary/HDDM-A/" />
+  <meta property="og:url" content="https://riverml.xyz/dev/api/misc/ZstdClassifier/" />
   <meta property="og:image" content="https://riverml.xyz/img/icon.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="HDDM_A - River" />
+  <meta name="twitter:title" content="ZstdClassifier - River" />
   <meta name="twitter:description" content="Online machine learning in Python" />
   <meta name="twitter:image" content="https://riverml.xyz/img/icon.png" />
 
@@ -109,7 +109,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hddm_a" class="md-skip">
+        <a href="#zstdclassifier" class="md-skip">
           Skip to content
         </a>
       
@@ -127,9 +127,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="River" class="md-header__button md-logo" aria-label="River" data-md-component="logo">
+    <a href="../../.." title="River" class="md-header__button md-logo" aria-label="River" data-md-component="logo">
       
-  <img src="../../../../img/icon.png" alt="River">
+  <img src="../../../img/icon.png" alt="River">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
@@ -146,7 +146,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              HDDM_A
+              ZstdClassifier
             
           </span>
         </div>
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../introduction/installation/" class="md-tabs__link">
+        <a href="../../../introduction/installation/" class="md-tabs__link">
           
   
   Introduction
@@ -251,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../recipes/reading-data/" class="md-tabs__link">
+        <a href="../../../recipes/reading-data/" class="md-tabs__link">
           
   
   Recipes
@@ -272,7 +272,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../overview/" class="md-tabs__link">
+        <a href="../../overview/" class="md-tabs__link">
           
   
   API
@@ -291,7 +291,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../examples/batch-to-online/" class="md-tabs__link">
+        <a href="../../../examples/batch-to-online/" class="md-tabs__link">
           
   
   Examples
@@ -308,7 +308,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../faq" class="md-tabs__link">
+      <a href="../../../faq" class="md-tabs__link">
         
   
   FAQ
@@ -326,7 +326,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../releases/unreleased/" class="md-tabs__link">
+        <a href="../../../releases/unreleased/" class="md-tabs__link">
           
   
   Releases
@@ -343,7 +343,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../benchmarks" class="md-tabs__link">
+      <a href="../../../benchmarks" class="md-tabs__link">
         
   
   Benchmarks
@@ -359,7 +359,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../license" class="md-tabs__link">
+      <a href="../../../license" class="md-tabs__link">
         
   
   License
@@ -391,9 +391,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="River" class="md-nav__button md-logo" aria-label="River" data-md-component="logo">
+    <a href="../../.." title="River" class="md-nav__button md-logo" aria-label="River" data-md-component="logo">
       
-  <img src="../../../../img/icon.png" alt="River">
+  <img src="../../../img/icon.png" alt="River">
 
     </a>
     River
@@ -452,7 +452,7 @@
   
   
   
-    <a href="../../../../introduction/installation/" class="md-nav__link">
+    <a href="../../../introduction/installation/" class="md-nav__link">
       
   
   
@@ -524,7 +524,7 @@
   
   
   
-    <a href="../../../../recipes/reading-data/" class="md-nav__link">
+    <a href="../../../recipes/reading-data/" class="md-nav__link">
       
   
   
@@ -1833,7 +1833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../overview/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
         
   
   
@@ -1884,7 +1884,7 @@
   
   
   
-    <a href="../../../active/EntropySampler/" class="md-nav__link">
+    <a href="../../active/EntropySampler/" class="md-nav__link">
       
   
   
@@ -1955,7 +1955,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -2032,7 +2032,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -2127,7 +2127,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -2194,7 +2194,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -2263,7 +2263,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -2342,7 +2342,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -2399,7 +2399,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -2456,7 +2456,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -2563,7 +2563,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -2571,6 +2571,835 @@
     
   
   datasets
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../drift/ADWIN/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  drift
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  dummy
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  ensemble
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  evaluate
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  facto
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  feature_extraction
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  feature_selection
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  forest
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  imblearn
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  linear_model
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  metrics
 
     
   </span>
@@ -2606,16 +3435,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
     
     
     
@@ -2629,17 +3448,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_23" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_23" id="__nav_3_23_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-  drift
+  misc
 
     
   </span>
@@ -2649,12 +3468,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_12">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_23_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_23">
             <span class="md-nav__icon md-icon"></span>
             
   
-  drift
+  misc
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -2666,14 +3485,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ADWIN/" class="md-nav__link">
+      <a href="../SDFT/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  ADWIN
+  SDFT
 
     
   </span>
@@ -2693,267 +3512,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../DriftRetrainingClassifier/" class="md-nav__link">
+      <a href="../Skyline/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  DriftRetrainingClassifier
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../DummyDriftDetector/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  DummyDriftDetector
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../KSWIN/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  KSWIN
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../NoDrift/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  NoDrift
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../PageHinkley/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  PageHinkley
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12_7" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3_12_7" id="__nav_3_12_7_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  binary
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_12_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_12_7">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  binary
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../DDM/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  DDM
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../EDDM/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  EDDM
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../FHDDM/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  FHDDM
+  Skyline
 
     
   </span>
@@ -2991,7 +3557,7 @@
   <span class="md-ellipsis">
     
   
-  HDDM_A
+  ZstdClassifier
 
     
   </span>
@@ -3008,7 +3574,7 @@
   <span class="md-ellipsis">
     
   
-  HDDM_A
+  ZstdClassifier
 
     
   </span>
@@ -3097,33 +3663,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../HDDM-W/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  HDDM_W
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -3140,6 +3679,1823 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  model_selection
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  multiclass
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  multioutput
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  naive_bayes
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  neighbors
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  neural_net
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  optim
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  preprocessing
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../proba/Beta/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  proba
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../reco/Baseline/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  reco
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../rules/AMRules/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  rules
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../sketch/Counter/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  sketch
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../stats/AbsMax/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  stats
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../stream/Cache/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  stream
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  time_series
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  tree
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../utils/Rolling/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  utils
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  anomaly
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  bandit
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../base/Base/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  base
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../cluster/CluStream/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  cluster
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  compat
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../compose/Discard/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  compose
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../conf/Interval/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  conf
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  covariance
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -3199,8 +5555,69 @@
 
               
             
-          </ul>
-        </nav>
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../drift/ADWIN/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  drift
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
       
     </li>
   
@@ -3240,7 +5657,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -3317,7 +5734,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -3388,7 +5805,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -3457,7 +5874,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -3524,7 +5941,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -3583,7 +6000,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -3646,7 +6063,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -3713,7 +6130,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -3784,7 +6201,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -3941,7 +6358,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -3998,7 +6415,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -4063,7 +6480,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -4122,7 +6539,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -4185,7 +6602,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -4246,7 +6663,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -4307,7 +6724,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -4364,7 +6781,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -4451,7 +6868,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -4540,7 +6957,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -4603,7 +7020,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -4666,7 +7083,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -4721,7 +7138,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -4784,7 +7201,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -4903,7 +7320,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -4982,7 +7399,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -5051,7 +7468,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -5126,7 +7543,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -5203,7 +7620,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -5274,7 +7691,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -5351,7 +7768,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -5446,7 +7863,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -5513,7 +7930,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -5582,7 +7999,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -5661,7 +8078,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -5718,7 +8135,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -5775,7 +8192,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -5882,7 +8299,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -5951,7 +8368,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -6010,7 +8427,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -6087,7 +8504,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -6158,7 +8575,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -6227,7 +8644,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -6294,7 +8711,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -6353,7 +8770,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -6416,7 +8833,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -6483,7 +8900,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -6554,7 +8971,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -6711,7 +9128,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -6768,7 +9185,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -6833,7 +9250,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -6892,7 +9309,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -6955,7 +9372,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -7016,7 +9433,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -7077,7 +9494,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -7134,7 +9551,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -7221,7 +9638,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -7310,7 +9727,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -7373,7 +9790,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -7436,7 +9853,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -7491,7 +9908,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -7554,7 +9971,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -7673,7 +10090,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -7752,7 +10169,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -7821,7 +10238,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -7896,7 +10313,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -7973,7 +10390,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -8044,7 +10461,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -8121,7 +10538,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -8216,7 +10633,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -8283,7 +10700,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -8352,7 +10769,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -8431,7 +10848,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -8488,7 +10905,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -8545,7 +10962,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -8652,7 +11069,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -8721,7 +11138,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -8780,7 +11197,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -8857,7 +11274,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -8928,7 +11345,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -8997,7 +11414,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -9064,7 +11481,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -9123,7 +11540,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -9186,7 +11603,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -9253,7 +11670,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -9324,7 +11741,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -9481,7 +11898,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -9538,7 +11955,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -9603,7 +12020,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -9662,7 +12079,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -9725,7 +12142,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -9786,7 +12203,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -9847,7 +12264,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -9904,7 +12321,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -9991,7 +12408,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -10080,7 +12497,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -10143,7 +12560,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -10206,7 +12623,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -10261,7 +12678,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -10324,7 +12741,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -10443,7 +12860,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -10522,7 +12939,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -10591,7 +13008,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -10666,7 +13083,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -10743,7 +13160,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -10814,7 +13231,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -10891,7 +13308,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -10986,7 +13403,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -11053,7 +13470,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -11122,7 +13539,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -11201,7 +13618,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -11258,7 +13675,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -11315,7 +13732,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -11422,7 +13839,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -11491,7 +13908,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -11550,7 +13967,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -11627,7 +14044,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -11698,7 +14115,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -11767,7 +14184,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -11834,7 +14251,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -11893,7 +14310,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -11956,7 +14373,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -12023,7 +14440,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -12094,7 +14511,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -12251,7 +14668,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -12308,7 +14725,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -12373,7 +14790,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -12432,7 +14849,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -12495,7 +14912,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -12556,7 +14973,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -12617,7 +15034,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -12674,7 +15091,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -12761,7 +15178,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -12850,7 +15267,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -12913,7 +15330,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -12976,7 +15393,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -13031,7 +15448,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -13094,7 +15511,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -13213,7 +15630,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -13292,7 +15709,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -13361,7 +15778,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -13436,7 +15853,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -13513,7 +15930,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -13584,7 +16001,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -13661,7 +16078,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -13756,7 +16173,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -13823,7 +16240,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -13892,7 +16309,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -13971,7 +16388,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -14028,7 +16445,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -14085,7 +16502,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -14192,7 +16609,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -14261,7 +16678,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -14320,7 +16737,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -14397,7 +16814,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -14468,7 +16885,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -14537,7 +16954,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -14604,7 +17021,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -14663,7 +17080,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -14726,7 +17143,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -14793,7 +17210,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -14864,7 +17281,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -15021,7 +17438,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -15078,7 +17495,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -15143,7 +17560,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -15202,7 +17619,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -15265,7 +17682,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -15326,7 +17743,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -15387,7 +17804,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -15444,7 +17861,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -15531,7 +17948,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -15620,7 +18037,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -15683,7 +18100,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -15746,7 +18163,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -15801,7 +18218,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -15864,7 +18281,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -15983,7 +18400,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -16062,7 +18479,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -16131,7 +18548,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -16206,7 +18623,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -16283,7 +18700,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -16354,7 +18771,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -16431,7 +18848,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -16526,7 +18943,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -16593,7 +19010,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -16662,7 +19079,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -16741,7 +19158,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -16798,7 +19215,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -16855,7 +19272,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -16962,7 +19379,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -17031,7 +19448,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -17090,7 +19507,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -17167,7 +19584,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -17238,7 +19655,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -17307,7 +19724,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -17374,7 +19791,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -17433,7 +19850,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -17496,7 +19913,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -17563,7 +19980,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -17634,7 +20051,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -17791,7 +20208,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -17848,7 +20265,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -17913,7 +20330,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -17972,7 +20389,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -18035,7 +20452,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -18096,7 +20513,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -18157,7 +20574,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -18214,7 +20631,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -18301,7 +20718,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -18390,7 +20807,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -18453,7 +20870,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -18516,7 +20933,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -18571,7 +20988,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -18634,7 +21051,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -18753,7 +21170,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -18832,7 +21249,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -18901,7 +21318,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -18976,7 +21393,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -19053,7 +21470,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -19124,7 +21541,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -19201,7 +21618,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -19296,7 +21713,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -19363,7 +21780,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -19432,7 +21849,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -19511,7 +21928,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -19568,7 +21985,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -19625,7 +22042,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -19732,7 +22149,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -19801,7 +22218,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -19860,7 +22277,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -19937,7 +22354,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -20008,7 +22425,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -20077,7 +22494,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -20144,7 +22561,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -20203,7 +22620,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -20266,7 +22683,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -20333,7 +22750,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -20404,7 +22821,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -20561,7 +22978,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -20618,7 +23035,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -20683,7 +23100,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -20742,7 +23159,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -20805,7 +23222,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -20866,7 +23283,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -20927,7 +23344,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -20984,7 +23401,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -21071,7 +23488,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -21160,7 +23577,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -21223,7 +23640,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -21286,7 +23703,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -21341,7 +23758,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -21404,7 +23821,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -21523,7 +23940,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -21602,7 +24019,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -21671,7 +24088,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -21746,7 +24163,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -21823,7 +24240,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -21894,7 +24311,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -21971,7 +24388,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -22066,7 +24483,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -22133,7 +24550,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -22202,7 +24619,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -22281,7 +24698,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -22338,7 +24755,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -22395,7 +24812,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -22502,7 +24919,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -22571,7 +24988,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -22630,7 +25047,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -22707,7 +25124,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -22778,7 +25195,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -22847,7 +25264,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -22914,7 +25331,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -22973,7 +25390,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -23036,7 +25453,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -23103,7 +25520,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -23174,7 +25591,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -23331,7 +25748,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -23388,7 +25805,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -23453,7 +25870,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -23512,7 +25929,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -23575,7 +25992,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -23636,7 +26053,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -23697,7 +26114,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -23754,7 +26171,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -23841,7 +26258,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -23930,7 +26347,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -23993,7 +26410,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -24056,7 +26473,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -24111,7 +26528,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -24174,7 +26591,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -24293,7 +26710,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -24372,7 +26789,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -24441,7 +26858,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -24516,7 +26933,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -24593,7 +27010,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -24664,7 +27081,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -24741,7 +27158,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -24836,7 +27253,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -24903,7 +27320,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -24972,7 +27389,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -25051,7 +27468,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -25108,7 +27525,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -25165,7 +27582,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -25272,7 +27689,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -25341,7 +27758,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -25400,7 +27817,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -25477,7 +27894,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -25548,7 +27965,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -25617,7 +28034,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -25664,8 +28081,6 @@
       
         
       
-        
-      
     
     
     
@@ -25684,7 +28099,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -25743,7 +28158,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -25806,7 +28221,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -25873,7 +28288,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -25944,7 +28359,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -26101,7 +28516,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -26158,7 +28573,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -26223,7 +28638,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -26282,7 +28697,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -26345,7 +28760,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -26406,7 +28821,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -26467,7 +28882,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -26524,7 +28939,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -26611,7 +29026,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -26700,7 +29115,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -26763,7 +29178,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -26826,7 +29241,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -26881,7 +29296,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -26944,7 +29359,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -27063,7 +29478,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -27142,7 +29557,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -27211,7 +29626,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -27286,7 +29701,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -27363,7 +29778,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -27434,7 +29849,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -27511,7 +29926,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -27606,7 +30021,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -27673,7 +30088,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -27742,7 +30157,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -27821,7 +30236,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -27878,7 +30293,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -27935,7 +30350,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -28042,7 +30457,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -28111,7 +30526,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -28170,7 +30585,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -28247,7 +30662,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -28318,7 +30733,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -28387,7 +30802,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -28452,7 +30867,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -28511,7 +30926,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -28574,7 +30989,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -28641,7 +31056,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -28712,7 +31127,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -28869,7 +31284,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -28926,7 +31341,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -28991,7 +31406,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -29050,7 +31465,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -29113,7 +31528,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -29174,7 +31589,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -29235,7 +31650,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -29292,7 +31707,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -29379,7 +31794,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -29468,7 +31883,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -29531,7 +31946,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -29594,7 +32009,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -29649,7 +32064,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -29712,7 +32127,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -29831,7 +32246,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -29910,7 +32325,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -29979,7 +32394,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -30054,7 +32469,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -30131,7 +32546,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -30202,7 +32617,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -30279,7 +32694,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -30374,7 +32789,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -30441,7 +32856,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -30510,7 +32925,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -30589,7 +33004,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -30646,7 +33061,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -30703,7 +33118,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -30810,7 +33225,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -30879,7 +33294,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -30938,7 +33353,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -31015,7 +33430,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -31086,7 +33501,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -31155,7 +33570,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -31220,7 +33635,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -31279,7 +33694,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -31342,7 +33757,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -31409,7 +33824,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -31480,7 +33895,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -31637,7 +34052,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -31694,7 +34109,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -31759,7 +34174,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -31818,7 +34233,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -31881,7 +34296,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -31942,7 +34357,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -32003,7 +34418,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -32060,7 +34475,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -32147,7 +34562,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -32236,7 +34651,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -32299,7 +34714,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -32362,7 +34777,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -32417,7 +34832,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -32480,7 +34895,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -32599,7 +35014,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -32678,7 +35093,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -32747,7 +35162,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -32822,7 +35237,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -32899,7 +35314,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -32970,7 +35385,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -33047,7 +35462,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -33142,7 +35557,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -33209,7 +35624,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -33278,7 +35693,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -33357,7 +35772,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -33414,7 +35829,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -33471,7 +35886,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -33578,7 +35993,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -33647,7 +36062,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -33706,7 +36121,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -33783,7 +36198,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -33854,7 +36269,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -33923,7 +36338,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -33988,7 +36403,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -34047,7 +36462,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -34110,7 +36525,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -34177,7 +36592,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -34248,7 +36663,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -34405,7 +36820,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -34462,7 +36877,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -34527,7 +36942,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -34586,7 +37001,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -34649,7 +37064,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -34710,7 +37125,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -34771,7 +37186,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -34828,7 +37243,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -34915,7 +37330,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -35004,7 +37419,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -35067,7 +37482,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -35130,7 +37545,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -35185,7 +37600,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -35248,7 +37663,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -35367,7 +37782,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -35446,7 +37861,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -35515,7 +37930,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -35590,7 +38005,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -35667,7 +38082,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -35738,7 +38153,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -35815,7 +38230,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -35910,7 +38325,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -35977,7 +38392,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -36046,7 +38461,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -36125,7 +38540,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -36182,7 +38597,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -36239,7 +38654,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -36346,7 +38761,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -36415,7 +38830,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -36474,7 +38889,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -36551,7 +38966,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -36622,7 +39037,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -36691,7 +39106,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -36756,7 +39171,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -36815,7 +39230,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -36878,7 +39293,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -36945,7 +39360,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -37016,7 +39431,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -37173,7 +39588,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -37230,7 +39645,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -37295,7 +39710,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -37354,7 +39769,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -37417,7 +39832,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -37478,7 +39893,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -37539,7 +39954,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -37596,7 +40011,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -37683,7 +40098,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -37772,7 +40187,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -37835,7 +40250,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -37898,7 +40313,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -37953,7 +40368,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -38016,7 +40431,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -38135,7 +40550,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -38214,7 +40629,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -38283,7 +40698,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -38358,7 +40773,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -38435,7 +40850,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -38506,7 +40921,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -38583,7 +40998,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -38678,7 +41093,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -38745,7 +41160,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -38814,7 +41229,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -38893,7 +41308,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -38950,7 +41365,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -39007,7 +41422,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -39114,7 +41529,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -39183,7 +41598,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -39242,7 +41657,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -39319,7 +41734,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -39390,7 +41805,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -39459,7 +41874,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -39524,7 +41939,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -39583,7 +41998,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -39646,7 +42061,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -39713,7 +42128,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -39784,7 +42199,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -39941,7 +42356,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -39998,7 +42413,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -40063,7 +42478,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -40122,7 +42537,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -40185,7 +42600,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -40246,7 +42661,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -40307,7 +42722,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -40364,7 +42779,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -40451,7 +42866,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -40540,7 +42955,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -40603,7 +43018,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -40666,7 +43081,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -40721,7 +43136,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -40784,7 +43199,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -40903,7 +43318,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -40982,7 +43397,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -41051,7 +43466,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -41126,7 +43541,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -41203,7 +43618,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -41274,7 +43689,7 @@
   
   
   
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
+    <a href="../../anomaly/GaussianScorer/" class="md-nav__link">
       
   
   
@@ -41351,7 +43766,7 @@
   
   
   
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
+    <a href="../../bandit/BayesUCB/" class="md-nav__link">
       
   
   
@@ -41446,7 +43861,7 @@
   
   
   
-    <a href="../../../base/Base/" class="md-nav__link">
+    <a href="../../base/Base/" class="md-nav__link">
       
   
   
@@ -41513,7 +43928,7 @@
   
   
   
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
+    <a href="../../cluster/CluStream/" class="md-nav__link">
       
   
   
@@ -41582,7 +43997,7 @@
   
   
   
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
+    <a href="../../compat/River2SKLClassifier/" class="md-nav__link">
       
   
   
@@ -41661,7 +44076,7 @@
   
   
   
-    <a href="../../../compose/Discard/" class="md-nav__link">
+    <a href="../../compose/Discard/" class="md-nav__link">
       
   
   
@@ -41718,7 +44133,7 @@
   
   
   
-    <a href="../../../conf/Interval/" class="md-nav__link">
+    <a href="../../conf/Interval/" class="md-nav__link">
       
   
   
@@ -41775,7 +44190,7 @@
   
   
   
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
+    <a href="../../covariance/EmpiricalCovariance/" class="md-nav__link">
       
   
   
@@ -41882,7 +44297,7 @@
   
   
   
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
+    <a href="../../datasets/AirlinePassengers/" class="md-nav__link">
       
   
   
@@ -41951,7 +44366,7 @@
   
   
   
-    <a href="../../ADWIN/" class="md-nav__link">
+    <a href="../../drift/ADWIN/" class="md-nav__link">
       
   
   
@@ -42010,7 +44425,7 @@
   
   
   
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
+    <a href="../../dummy/NoChangeClassifier/" class="md-nav__link">
       
   
   
@@ -42087,7 +44502,7 @@
   
   
   
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
+    <a href="../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
       
   
   
@@ -42158,7 +44573,7 @@
   
   
   
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
+    <a href="../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
       
   
   
@@ -42227,7 +44642,7 @@
   
   
   
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
+    <a href="../../facto/FFMClassifier/" class="md-nav__link">
       
   
   
@@ -42292,7 +44707,7 @@
   
   
   
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
+    <a href="../../feature-extraction/Agg/" class="md-nav__link">
       
   
   
@@ -42351,7 +44766,7 @@
   
   
   
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
+    <a href="../../feature-selection/PoissonInclusion/" class="md-nav__link">
       
   
   
@@ -42414,7 +44829,7 @@
   
   
   
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
+    <a href="../../forest/AMFClassifier/" class="md-nav__link">
       
   
   
@@ -42481,7 +44896,7 @@
   
   
   
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
+    <a href="../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
       
   
   
@@ -42552,7 +44967,7 @@
   
   
   
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
+    <a href="../../linear-model/ALMAClassifier/" class="md-nav__link">
       
   
   
@@ -42709,7 +45124,7 @@
   
   
   
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
+    <a href="../../metrics/Accuracy/" class="md-nav__link">
       
   
   
@@ -42766,7 +45181,7 @@
   
   
   
-    <a href="../../../misc/SDFT/" class="md-nav__link">
+    <a href="../SDFT/" class="md-nav__link">
       
   
   
@@ -42831,7 +45246,7 @@
   
   
   
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
+    <a href="../../model-selection/BanditClassifier/" class="md-nav__link">
       
   
   
@@ -42890,7 +45305,7 @@
   
   
   
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
+    <a href="../../multiclass/OneVsOneClassifier/" class="md-nav__link">
       
   
   
@@ -42953,7 +45368,7 @@
   
   
   
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
+    <a href="../../multioutput/ClassifierChain/" class="md-nav__link">
       
   
   
@@ -43014,7 +45429,7 @@
   
   
   
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
+    <a href="../../naive-bayes/BernoulliNB/" class="md-nav__link">
       
   
   
@@ -43075,7 +45490,7 @@
   
   
   
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
+    <a href="../../neighbors/KNNClassifier/" class="md-nav__link">
       
   
   
@@ -43132,7 +45547,7 @@
   
   
   
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
+    <a href="../../neural-net/MLPRegressor/" class="md-nav__link">
       
   
   
@@ -43219,7 +45634,7 @@
   
   
   
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
+    <a href="../../optim/AMSGrad/" class="md-nav__link">
       
   
   
@@ -43308,7 +45723,7 @@
   
   
   
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
+    <a href="../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
       
   
   
@@ -43371,7 +45786,7 @@
   
   
   
-    <a href="../../../proba/Beta/" class="md-nav__link">
+    <a href="../../proba/Beta/" class="md-nav__link">
       
   
   
@@ -43434,7 +45849,7 @@
   
   
   
-    <a href="../../../reco/Baseline/" class="md-nav__link">
+    <a href="../../reco/Baseline/" class="md-nav__link">
       
   
   
@@ -43489,7 +45904,7 @@
   
   
   
-    <a href="../../../rules/AMRules/" class="md-nav__link">
+    <a href="../../rules/AMRules/" class="md-nav__link">
       
   
   
@@ -43552,7 +45967,7 @@
   
   
   
-    <a href="../../../sketch/Counter/" class="md-nav__link">
+    <a href="../../sketch/Counter/" class="md-nav__link">
       
   
   
@@ -43671,7 +46086,7 @@
   
   
   
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
+    <a href="../../stats/AbsMax/" class="md-nav__link">
       
   
   
@@ -43750,7 +46165,7 @@
   
   
   
-    <a href="../../../stream/Cache/" class="md-nav__link">
+    <a href="../../stream/Cache/" class="md-nav__link">
       
   
   
@@ -43819,7 +46234,7 @@
   
   
   
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
+    <a href="../../time-series/ForecastingMetric/" class="md-nav__link">
       
   
   
@@ -43894,7 +46309,7 @@
   
   
   
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
+    <a href="../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
       
   
   
@@ -43949,10 +46364,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -43971,2771 +46382,7 @@
   
   
   
-    <a href="../../../utils/Rolling/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  utils
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../anomaly/GaussianScorer/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  anomaly
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../bandit/BayesUCB/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  bandit
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../base/Base/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  base
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../cluster/CluStream/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  cluster
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../compat/River2SKLClassifier/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  compat
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../compose/Discard/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  compose
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../conf/Interval/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  conf
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../covariance/EmpiricalCovariance/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  covariance
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../datasets/AirlinePassengers/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  datasets
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../ADWIN/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  drift
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../dummy/NoChangeClassifier/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  dummy
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../ensemble/ADWINBaggingClassifier/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  ensemble
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../evaluate/BinaryClassificationTrack/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  evaluate
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../facto/FFMClassifier/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  facto
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../feature-extraction/Agg/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  feature_extraction
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../feature-selection/PoissonInclusion/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  feature_selection
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../forest/AMFClassifier/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  forest
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../imblearn/ChebyshevOverSampler/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  imblearn
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../linear-model/ALMAClassifier/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  linear_model
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../metrics/Accuracy/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  metrics
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../misc/SDFT/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  misc
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../model-selection/BanditClassifier/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  model_selection
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../multiclass/OneVsOneClassifier/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  multiclass
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../multioutput/ClassifierChain/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  multioutput
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../naive-bayes/BernoulliNB/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  naive_bayes
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../neighbors/KNNClassifier/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  neighbors
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../neural-net/MLPRegressor/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  neural_net
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../optim/AMSGrad/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  optim
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../preprocessing/AdaptiveStandardScaler/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  preprocessing
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../proba/Beta/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  proba
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../reco/Baseline/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  reco
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../rules/AMRules/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  rules
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../sketch/Counter/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  sketch
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../stats/AbsMax/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  stats
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../stream/Cache/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  stream
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../time-series/ForecastingMetric/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  time_series
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../tree/ExtremelyFastDecisionTreeClassifier/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  tree
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../utils/Rolling/" class="md-nav__link">
+    <a href="../../utils/Rolling/" class="md-nav__link">
       
   
   
@@ -46817,7 +46464,7 @@
   
   
   
-    <a href="../../../../examples/batch-to-online/" class="md-nav__link">
+    <a href="../../../examples/batch-to-online/" class="md-nav__link">
       
   
   
@@ -46849,7 +46496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../faq" class="md-nav__link">
+      <a href="../../../faq" class="md-nav__link">
         
   
   
@@ -46975,7 +46622,7 @@
   
   
   
-    <a href="../../../../releases/unreleased/" class="md-nav__link">
+    <a href="../../../releases/unreleased/" class="md-nav__link">
       
   
   
@@ -47007,7 +46654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../benchmarks" class="md-nav__link">
+      <a href="../../../benchmarks" class="md-nav__link">
         
   
   
@@ -47033,7 +46680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../license" class="md-nav__link">
+      <a href="../../../license" class="md-nav__link">
         
   
   
@@ -47153,92 +46800,108 @@
   
 
 
-<h1 id="hddm_a">HDDM_A<a class="headerlink" href="#hddm_a" title="Permanent link">&para;</a></h1>
-<p>Drift Detection Method based on Hoeffding's bounds with moving average-test.</p>
-<p>HDDM_A is a drift detection method based on the Hoeffding's inequality which uses the input average as estimator. </p>
-<p><strong>Input:</strong> <code>x</code> is an entry in a stream of bits, where 1 indicates error/failure and 0 represents correct/normal values. </p>
-<p>For example, if a classifier's prediction <span class="arithmatex">\(y'\)</span> is right or wrong w.r.t. the true target label <span class="arithmatex">\(y\)</span>: </p>
-<ul>
-<li>
-<p>0: Correct, <span class="arithmatex">\(y=y'\)</span></p>
-</li>
-<li>
-<p>1: Error, <span class="arithmatex">\(y \neq y'\)</span></p>
-</li>
-</ul>
-<p><em>Implementation based on MOA.</em></p>
+<h1 id="zstdclassifier">ZstdClassifier<a class="headerlink" href="#zstdclassifier" title="Permanent link">&para;</a></h1>
+<p>Compression-based text classifier using Zstandard.</p>
+<p>For each class, a byte buffer is maintained by appending every text seen with that label. The buffer is bounded to <code>window</code> bytes; oldest bytes are evicted FIFO once the buffer is full. A <code>ZstdCompressor</code> is built lazily from each class's buffer (used as a raw prefix dictionary). Classification scores a document by compressing it with every class's compressor; the class whose compressor produces the shortest output wins. </p>
+<p>The intuition is that compression length approximates Kolmogorov complexity: a compressor seeded with text from class <code>c</code> produces shorter output for documents that share patterns with that class. </p>
+<p>This requires Python 3.14 or later (<code>compression.zstd</code> is only available there).</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>drift_confidence</strong></p>
-<p><em>Default</em> → <code>0.001</code></p>
-<p>Confidence to the drift</p>
+<p><strong>window</strong></p>
+<p><em>Type</em> → <code>int</code></p>
+<p><em>Default</em> → <code>1000000</code></p>
+<p>Maximum number of bytes kept per class. The oldest bytes are dropped once this is reached. Larger windows give the compressor more context at the cost of memory and slower compression.</p>
 </li>
 <li>
-<p><strong>warning_confidence</strong></p>
-<p><em>Default</em> → <code>0.005</code></p>
-<p>Confidence to the warning</p>
+<p><strong>level</strong></p>
+<p><em>Type</em> → <code>int</code></p>
+<p><em>Default</em> → <code>3</code></p>
+<p>Zstandard compression level (1-22). Higher values compress more aggressively, which tends to sharpen classification but slows down both rebuilds and predictions.</p>
 </li>
 <li>
-<p><strong>two_sided_test</strong></p>
-<p><em>Default</em> → <code>False</code></p>
-<p>If <code>True</code>, will monitor error increments and decrements (two-sided). By default will only monitor increments (one-sided).</p>
+<p><strong>rebuild_every</strong></p>
+<p><em>Type</em> → <code>int</code></p>
+<p><em>Default</em> → <code>5</code></p>
+<p>Number of <code>learn_one</code> calls between compressor rebuilds for a given class. Rebuilding is a few tens of microseconds, but skipping rebuilds amortises the cost when many documents arrive in a row.</p>
+</li>
+<li>
+<p><strong>on</strong></p>
+<p><em>Type</em> → <code>str | None</code></p>
+<p><em>Default</em> → <code>None</code></p>
+<p>Name of the field in <code>x</code> that contains the text to classify. If <code>None</code>, <code>x</code> is either a <code>str</code> (used directly as text) or a feature <code>dict</code> (serialised in sorted-key order so the encoding is invariant to feature insertion order).</p>
 </li>
 </ul>
 <h2 id="attributes">Attributes<a class="headerlink" href="#attributes" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>drift_detected</strong></p>
-<p>Whether or not a drift is detected following the last update.</p>
-</li>
-<li>
-<p><strong>warning_detected</strong></p>
-<p>Whether or not a drift is detected following the last update.</p>
+<p><strong>buffers</strong> (<code>dict[ClfTarget, bytearray]</code>)</p>
+<p>The byte buffer accumulated per class.</p>
 </li>
 </ul>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p><div class="language-python highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">river</span><span class="w"> </span><span class="kn">import</span> <span class="n">drift</span>
+<p><div class="language-python highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">14</span><span class="p">):</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">river</span><span class="w"> </span><span class="kn">import</span> <span class="n">misc</span>
 
-<span class="n">rng</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">Random</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
-<span class="n">hddm_a</span> <span class="o">=</span> <span class="n">drift</span><span class="o">.</span><span class="n">binary</span><span class="o">.</span><span class="n">HDDM_A</span><span class="p">()</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">misc</span><span class="o">.</span><span class="n">ZstdClassifier</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">4096</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">rebuild_every</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="n">data_stream</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">choices</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">k</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
-<span class="n">data_stream</span> <span class="o">=</span> <span class="n">data_stream</span> <span class="o">+</span> <span class="n">rng</span><span class="o">.</span><span class="n">choices</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">k</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="p">[</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">])</span>
+    <span class="n">docs</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span><span class="s2">&quot;the cat sat on the mat&quot;</span><span class="p">,</span> <span class="s2">&quot;animal&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;a dog barked at the moon&quot;</span><span class="p">,</span> <span class="s2">&quot;animal&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;the bird flew over the tree&quot;</span><span class="p">,</span> <span class="s2">&quot;animal&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;stocks rallied after the report&quot;</span><span class="p">,</span> <span class="s2">&quot;finance&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;the central bank raised rates&quot;</span><span class="p">,</span> <span class="s2">&quot;finance&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;bond yields fell sharply today&quot;</span><span class="p">,</span> <span class="s2">&quot;finance&quot;</span><span class="p">),</span>
+    <span class="p">]</span>
+    <span class="k">for</span> <span class="n">text</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">docs</span><span class="p">:</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">learn_one</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span>
 
-<span class="n">print_warning</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_stream</span><span class="p">):</span>
-    <span class="n">hddm_a</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">hddm_a</span><span class="o">.</span><span class="n">warning_detected</span> <span class="ow">and</span> <span class="n">print_warning</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Warning detected at index </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">print_warning</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="k">if</span> <span class="n">hddm_a</span><span class="o">.</span><span class="n">drift_detected</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Change detected at index </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">print_warning</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">prediction</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict_one</span><span class="p">(</span><span class="s2">&quot;the dog chased the cat&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">prediction</span> <span class="o">=</span> <span class="s2">&quot;animal&quot;</span>
+<span class="n">prediction</span>
 </code></pre></div>
-<div class="language-text highlight"><pre><span></span><code>Warning detected at index 451
-Change detected at index 1206
+<div class="language-text highlight"><pre><span></span><code>&#39;animal&#39;
 </code></pre></div></p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
 <details class="- abstract">
-<summary>update</summary>
-<p>Update the change detector with a single data point.</p>
+<summary>learn_one</summary>
+<p>Update the model with a set of features <code>x</code> and a label <code>y</code>.</p>
 <p><strong>Parameters</strong></p>
 <ul>
-<li><strong>x</strong>     — <code>bool</code>    </li>
+<li><strong>x</strong>     — <code>str | dict[base.typing.FeatureName, Any]</code>    </li>
+<li><strong>y</strong>     — <code>base.typing.ClfTarget</code>    </li>
+</ul>
+</details>
+<p><span /></p>
+<details class="- abstract">
+<summary>predict_one</summary>
+<p>Predict the label of a set of features <code>x</code>.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><strong>x</strong>     — <code>dict[base.typing.FeatureName, Any]</code>    </li>
+<li><strong>kwargs</strong>     — <code>Any</code>    </li>
 </ul>
 <p><strong>Returns</strong></p>
-<p><code>None</code>:     self</p>
+<p><code>base.typing.ClfTarget | None</code>:     The predicted label.</p>
+</details>
+<p><span /></p>
+<details class="- abstract">
+<summary>predict_proba_one</summary>
+<p>Predict the probability of each label for a dictionary of features <code>x</code>.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><strong>x</strong>     — <code>str | dict[base.typing.FeatureName, Any]</code>    </li>
+<li><strong>kwargs</strong>     — <code>Any</code>    </li>
+</ul>
+<p><strong>Returns</strong></p>
+<p><code>dict&amp;#91;base.typing.ClfTarget, float&amp;#93;</code>:     A dictionary that associates a probability which each label.</p>
 </details>
 <p><span /></p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p>Frías-Blanco I, del Campo-Ávila J, Ramos-Jimenez G, et al. Online and non-parametric drift detection methods based on Hoeffding's bounds. IEEE Transactions on Knowledge and Data Engineering, 2014, 27(3): 810-823.</p>
-</li>
-<li>
-<p>Albert Bifet, Geoff Holmes, Richard Kirkby, Bernhard Pfahringer. MOA: Massive Online Analysis; Journal of Machine Learning Research 11: 1601-1604, 2010.</p>
-</li>
+<li><a href="https://maxhalford.github.io/blog/text-classification-zstd/">Zstd-based text classification</a></li>
 </ul>
 
 
@@ -47318,18 +46981,18 @@ Change detected at index 1206
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../../..","features":["content.code.copy","navigation.tabs","navigation.instant","navigation.indexes","navigation.prune"],"search":"../../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["content.code.copy","navigation.tabs","navigation.instant","navigation.indexes","navigation.prune"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.dbc0afdc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.dbc0afdc.min.js"></script>
       
-        <script src="../../../../javascripts/config.js"></script>
+        <script src="../../../javascripts/config.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2/es5/tex-mml-chtml.js"></script>
       
         <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
       
-        <script src="../../../../javascripts/tablesort.js"></script>
+        <script src="../../../javascripts/tablesort.js"></script>
       
     
   </body>
