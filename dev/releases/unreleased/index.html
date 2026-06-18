@@ -2128,6 +2128,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#covariance" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        covariance
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linear_model" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        linear_model
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#preprocessing" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2143,6 +2165,28 @@
     <span class="md-ellipsis">
       <span class="md-typeset">
         utils
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        rules
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        stats
       </span>
     </span>
   </a>
@@ -3337,6 +3381,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#covariance" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        covariance
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linear_model" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        linear_model
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#preprocessing" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -3352,6 +3418,28 @@
     <span class="md-ellipsis">
       <span class="md-typeset">
         utils
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        rules
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        stats
       </span>
     </span>
   </a>
@@ -3389,7 +3477,19 @@
 
 <h1 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">&para;</a></h1>
 <ul>
-<li>Add <code>ppc64le</code> architecture to Linux wheel builds. (@ChidiebereNjoku)</li>
+<li>Add <code>ppc64le</code> architecture to Linux wheel builds.</li>
+</ul>
+<h2 id="covariance">covariance<a class="headerlink" href="#covariance" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Sped up <code>EmpiricalCovariance.update</code>/<code>revert</code> by caching the sorted feature list and pair iteration and by removing the <code>__getitem__</code>/<code>matrix</code> indirection in the hot path. ~40% faster at 30 features, no semantic change (pairwise-deletion semantics preserved).</li>
+<li>Restructured <code>EmpiricalPrecision</code> to use NumPy-backed dense state indexed by a feature → integer map, eliminating the dict ↔ numpy marshalling on every <code>update</code>/<code>update_many</code>. ~7× faster on 2000 × 20 sample streams.</li>
+<li>Fixed a latent asymmetry in <code>EmpiricalPrecision</code> under emerging features: the per-feature <code>w</code> scaling left the stored matrix skewed (e.g. <code>prec[a, b]</code> ≠ <code>prec[b, a]</code>) when features were introduced at different times.</li>
+</ul>
+<h2 id="linear_model">linear_model<a class="headerlink" href="#linear_model" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Restructured <code>BayesianLinearRegression</code> to use the same NumPy-backed storage as <code>EmpiricalPrecision</code>. ~11× faster <code>learn_one</code> at 20 features, ~24× at 50 features. Speeds up <code>bandit.LinUCB</code> as a side effect.</li>
+<li><code>BayesianLinearRegression</code> now passes <code>check_emerging_features</code> and <code>check_shuffle_features_no_impact</code> (the two checks previously skipped via <code>_unit_test_skips</code>). It now handles features arriving and disappearing after training begins.</li>
+<li>Fixed <code>BayesianLinearRegression</code> coefficient blow-up under emerging/disappearing features. The previous submatrix-only update broke the <code>_ss_inv ≈ inv(_ss)</code> invariant once different feature subsets were touched across calls (the submatrix of an inverse is generally not the inverse of the submatrix), causing coefficients to diverge to <code>inf</code>/<code>nan</code> on <code>check_emerging_features</code>-style streams. <code>learn_one</code> now updates the full state with a zero-padded <code>x</code> and is also ~1.5× faster on dense streams (no <code>np.ix_</code> fancy-indexing copies, contiguous BLAS calls). Behavior change: features absent from <code>learn_one</code>'s <code>x</code> are now treated as observed values of 0 (matching <code>LinearRegression</code> and the rest of the online-learning estimators), rather than being silently skipped. Identical to the previous behavior to floating-point roundoff when every call sees the same feature set.</li>
 </ul>
 <h2 id="preprocessing">preprocessing<a class="headerlink" href="#preprocessing" title="Permanent link">&para;</a></h2>
 <ul>
@@ -3399,6 +3499,15 @@
 <h2 id="utils">utils<a class="headerlink" href="#utils" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../../api/utils/Rolling"><code>utils.Rolling</code></a> and <a href="../../api/utils/TimeRolling"><code>utils.TimeRolling</code></a> now accept a class as their first argument and forward extra keyword arguments to its constructor, e.g. <a href="../../api/utils/Rolling"><code>utils.Rolling</code></a>(<a href="../../api/stats/Mean">stats.Mean</a>, window_size=3)<code>or [</code>utils.Rolling<code>](../api/utils/Rolling)([stats.Var](../api/stats/Var), window_size=3, ddof=0)</code>. This avoids a footgun when using these wrappers as <code>collections.defaultdict</code> factories, where the previous instance form silently shared state across keys. Passing a pre-built instance still works but now emits a <code>DeprecationWarning</code> and will be removed in a future release.</li>
+</ul>
+<h2 id="rules">rules<a class="headerlink" href="#rules" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Fixed <code>RecursionError</code> in <code>AMRules</code> on long streams: <a href="../../api/tree/splitter/EBSTSplitter"><code>tree.splitter.EBSTSplitter</code></a> (and <code>TEBSTSplitter</code>) now traverses its binary search tree iteratively and the BST nodes carry a custom iterative <code>__deepcopy__</code>, so deeply-skewed trees no longer blow Python's recursion limit when rules are cloned during expansion. <a href="../../api/tree/splitter/ExhaustiveSplitter"><code>tree.splitter.ExhaustiveSplitter</code></a> received the same treatment (iterative split-search, iterative node insertion, and iterative <code>__deepcopy__</code>).</li>
+<li>Fixed an <code>AMRules</code> memory leak where <code>HoeffdingRule.expand</code> appended a redundant <code>NumericLiteral</code> whenever a new split shared the feature and direction of an existing literal but did not tighten the threshold.</li>
+</ul>
+<h2 id="stats">stats<a class="headerlink" href="#stats" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Added <a href="../../api/stats/ChiSquared"><code>stats.ChiSquared</code></a>, a streaming Chi-squared statistic between two categorical variables. Wrap it with <a href="../../api/utils/Rolling"><code>utils.Rolling</code></a> for a rolling version.</li>
 </ul>
 <h2 id="stream">stream<a class="headerlink" href="#stream" title="Permanent link">&para;</a></h2>
 <ul>
